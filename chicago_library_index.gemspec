@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Wrapper for the City of Chicago Libraries public API.}
   spec.description   = %q{Allows user to access City of Chicago public API from ruby.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/cconnell/chicago-library-index"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or

@@ -39,8 +39,8 @@ module ChicagoLibraryIndex
 
     def self.find_by(search_attribute, search_keyword)
       api_array = api_array = Unirest.get('https://data.cityofchicago.org/resource/x8fc-8rcq.json').body
-      create_libraries(api_array)["search_attribute"]["search_keyword"]
-
+      temp = create_libraries(api_array)
+      (search_attribute, search_keyword)
     end
 
     def self.first
@@ -56,5 +56,3 @@ module ChicagoLibraryIndex
     private_class_method :create_libraries
   end
 end
-
-# find_by first last
